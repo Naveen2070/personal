@@ -1,0 +1,182 @@
+* {
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+
+.landing {
+	background-image: url("https://cdn.docketly.com/wp-content/uploads/2019/12/home-header.png");
+	background-size: 100% 100%;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	text-align: center;
+}
+
+.landing img {
+	width: 300px;
+	height: 300px;
+	border-radius: 350%;
+	margin-bottom: 50px;
+}
+
+.landing h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.landing h2 {
+	font-size: 24px;
+	margin-bottom: 30px;
+	color: #ffffff;
+}
+
+.button-container {
+	margin-top: 30px;
+}
+
+button {
+	background-color: #fff;
+	color: #0004f4;
+	padding: 12px 24px;
+	border-radius: 30px;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+	background-color: #0004f4;
+	color: #fff;
+}
+
+.full-resume {
+	display: none;
+	background-color: rgb(212, 212, 212);
+	padding: 50px;
+	text-align: center;
+	position: relative;
+}
+
+.full-resume h2 {
+	margin-bottom: 20px;
+}
+
+.full-resume p {
+	margin-bottom: 30px;
+}
+
+.button-container-full-resume {
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.contact-me {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.contact-me form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 50px;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 10px;
+	width: 50%;
+	margin: auto;
+}
+
+.contact-me label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.contact-me input,
+.contact-me textarea {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: none;
+	border-bottom: 2px solid #ccc;
+}
+
+.contact-me input[type=submit] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin-top: 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.contact-me input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+.contact-me .close {
+	color: #aaa;
+	position: absolute;
+	top: 20px;
+	right: 40px;
+	font-size: 28px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+hr {
+  border-top: 5px double #333;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 10px;
+	margin: 0 auto;
+}
+
+td,th{
+	padding: 8px;
+	text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+  }
+
+li {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    margin: 0 10px;
+    padding-left: 20px;
+}
+
+li:before {
+    content: "\2022";
+    color: red;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
